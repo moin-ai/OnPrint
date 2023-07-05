@@ -1,0 +1,49 @@
+<!-- HTML5 doctype -->
+//how to make verticle aligned nav bar?
+html, body {
+  margin: 0;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #252525;
+    color: rgb(236, 236, 236);
+}
+
+.topnav a {
+    color: rgb(236, 236, 236);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a.active {
+  background-color: rgb(243, 33, 33);
+  color: white;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Homepage</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css"/>
+    </head>
+    <body>
+      <div class="topnav">
+        <a class="active" href="#">Home</a>
+        <div>
+          <a href="#create"><i class='fas fa-plus create' id="create"></i></a>
+          <input type="text" placeholder="Search.." class="search dark">                
+          <a href="#profile"><i class='fas fa-user-circle usericon' id="profile"></i></a>
+        </div>
+      </div>
+    </body>
+</html>
+
